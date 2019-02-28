@@ -4,9 +4,9 @@ import json
 import colorama
 from utils import Utils
 
-from scenarios.building_automation.building_automation import BuildingAutomation
-from scenarios.home_automation.home_automation import HomeAutomation
-from scenarios.industrial_monitoring.industrial_monitoring import IndustrialMonitoring
+from scenarios.building_automation import BuildingAutomation
+from scenarios.home_automation import HomeAutomation
+from scenarios.industrial_monitoring import IndustrialMonitoring
 
 from helpers.reflash.reflash import IotlabReflash
 from helpers.reflash.reflash import WilabReflash

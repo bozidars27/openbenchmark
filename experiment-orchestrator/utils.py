@@ -8,4 +8,4 @@ class Utils:
 	date          = ""
 	firmware      = ""
 
-	scenario_config  = os.path.join(os.path.dirname(__file__), "scenarios")
+	scenario_config  = os.path.join(os.path.dirname(__file__), "..", "scenario-config")
