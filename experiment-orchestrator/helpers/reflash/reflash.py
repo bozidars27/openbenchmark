@@ -12,7 +12,7 @@ from utils import Utils
 
 class Reflash(object):
 
-	SCENARIO_CONFIG = os.path.join(os.path.dirname(__file__), "..", "..", "scenarios")
+	SCENARIO_CONFIG = Utils.scenario_config
 	FIRMWARE_PATH   = os.path.join(os.path.dirname(__file__), "fw")
 
 	def __init__(self, scenario):
