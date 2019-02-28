@@ -209,7 +209,7 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'CommandHandler' => App\Classes\ExperimentController\CommandHandler::class,
-        'ScenarioParser' => App\Classes\ExperimentController\ScenarioParser::class,
+        'ConfigParser' => App\Classes\ExperimentController\ConfigParser::class,
         'Helpers' => App\Classes\Helpers::class
     ],
 
