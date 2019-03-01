@@ -2238,12 +2238,27 @@
         }
     }, 
     "scenarios": [
-        "Industrial monitoring", 
-        "Building automation", 
-        "Home automation"
+        {
+            "identifier": "industrial-monitoring", 
+            "name": "Industrial monitoring"
+        }, 
+        {
+            "identifier": "building-automation", 
+            "name": "Building automation"
+        }, 
+        {
+            "identifier": "home-automation", 
+            "name": "Home automation"
+        }
     ], 
     "testbeds": [
-        "IoT-LAB", 
-        "w-iLab.t"
+        {
+            "identifier": "iotlab", 
+            "name": "IoT-LAB"
+        }, 
+        {
+            "identifier": "wilab", 
+            "name": "w-iLab.t"
+        }
     ]
 }

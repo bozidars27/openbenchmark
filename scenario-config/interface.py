@@ -94,8 +94,8 @@ class Interface:
 
 	def _generate_json_data(self):
 		data = {}
-		data['scenarios'] = [value["full_title"] for key, value in self.scenarios.items()]
-		data['testbeds'] = [value for key, value in self.testbeds.items()]
+		data['scenarios'] = [{"identifier": key, "name": value["full_title"]} for key, value in self.scenarios.items()]
+		data['testbeds'] = [{"identifier": key, "name": value} for key, value in self.testbeds.items()]
 
 		for scenario in self.scenarios:
 			data[scenario] = {}
