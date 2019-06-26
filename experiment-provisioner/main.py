@@ -313,21 +313,21 @@ def main():
 		firmware = args['firmware']
 
 	if action == 'reserve':
-            print 'Reserving nodes'
-            testbed.reservation.reserve_experiment()
+        print 'Reserving nodes'
+        testbed.reservation.reserve_experiment()
 	elif action == 'check':
-            print 'Checking experiment'
-            testbed.reservation.check_experiment()
+        print 'Checking experiment'
+        testbed.reservation.check_experiment()
 	elif action == 'terminate':
-            print 'Terminating experiment'
-            testbed.reservation.terminate_experiment()
+        print 'Terminating experiment'
+        testbed.reservation.terminate_experiment()
 	elif action == 'flash':
-            assert firmware is not None
-            print 'Flashing firmware: {0}'.format(firmware)
+        assert firmware is not None
+        print 'Flashing firmware: {0}'.format(firmware)
 	    OTBoxFlash(user_id, firmware, testbed.BROKER, args['testbed']).flash()
 	elif action == 'ov-start':
-            print 'Starting OV'
-            OVStartup(user_id, scenario, args['testbed'], testbed.BROKER, simulator).start()
+        print 'Starting OV'
+        OVStartup(user_id, scenario, args['testbed'], testbed.BROKER, simulator).start()
 
 if __name__ == '__main__':
 	main()
